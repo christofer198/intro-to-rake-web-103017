@@ -13,7 +13,7 @@ end
 #   task :migrate => :environment do
 #     students.create_table
 #   end
-# 
+#
 #   task :seed do
 #     require_relative './db/seeds.rb'
 #   end
