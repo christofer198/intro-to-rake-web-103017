@@ -7,3 +7,13 @@ namespace :greeting do
     puts "hola de Rake!"
   end
 end
+
+namespace :db
+  task :migrate => :environment do
+    Student.create_table
+  end
+
+  task :seed
+    require_relative './db/seeds.rb'
+  end
+end
