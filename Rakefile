@@ -8,7 +8,7 @@ namespace :greeting do
   end
 end
 
-namespace :db do 
+namespace :db do
   task :migrate => :environment do
     Student.create_table
   end
